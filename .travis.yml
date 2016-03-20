@@ -24,13 +24,6 @@ install:
 - travis_retry script/bootstrap
 script: script/cibuild
 notifications:
-  irc:
-    on_success: change
-    on_failure: change
-    channels:
-    - irc.freenode.org#bunto
-    template:
-    - '%{repository}#%{build_number} %{message} %{build_url}'
   email:
     on_success: never
     on_failure: change
